@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        
+        <link rel="icon" href="../Image/te-o_orange.png">
+        <link rel="stylesheet" type="text/css" href="../Style/style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script type="text/javascript" src="../index.js"></script>
+
+        <title> Teo Silfverhjelm | Specialization </title> 
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="column left"> 
+                <a href="../index.html" class="hflink">
+                    <img src="../Image/te-o_black_inv.png" alt="logo" class="logo" height="100%" style="vertical-align: middle;"/>
+                    <div class="name">
+                        TEO SILFVERHJELM
+                    </div>
+                </a>
+            </div>
+            <div class="column right"> 
+                <a id="pbtn" onmouseover="Dropdown();" onmouseout="Dropup();" href="../index.html" class="hflink">
+                    <div class="portfolio">PORTFOLIO</div> 
+                </a>
+                <a href="../Subpages/about.html" class="hflink">
+                    <div class="about">About</div> 
+                </a>
+                <a href="../Subpages/cv.html" class="hflink">
+                    <div class="cv">Cv</div> 
+                </a>
+            </div>
+        </div>
+        <div id="droplist" onmouseover="Dropdown();" onmouseout="Dropup();" style="opacity: 0;position: fixed;">
+            <div class="droplist">
+                <a href="../Subpages/specialization.html" class="hflink" style="margin: 8px;color: rgb(255, 158, 93);">Specialization</a>
+                <a href="../Subpages/project7.html" class="hflink" style="margin: 8px;">Toys or Sus</a>
+                <a href="../Subpages/project6.html" class="hflink" style="margin: 8px;">Loa of Death</a>
+            </div>
+        </div> 
+        <div class="explanation">
+            <div class="column center" style="display:flex;">
+                <div class="row header" style="background-image: url(../Image/vox_5_0.png);">
+                    Automatically Generating Navigation Mesh
+                </div>
+                <div class="row padlr compositerow">
+                    <div class="column left summary">
+                        <h1 class="chapter">In short</h1>
+                        <div class="description">
+                            I decided to make an automatically generating navigation mesh system for my specialization because I wanted to get
+                            more hands-on experience with complex editor-side systems, and really dig into the core of our AI and its pathfinding.
+                            <br><br>In the future I would like to work with AI, so getting a good hang of automatic generation and
+                            navigation meshes could help me get a more profound understanding of how pathfinding actors interact with the navmesh data. 
+                            Furthermore, having more experience with the systems surrounding AI could help me lay a foundation for more complex automaton in the future as well.<br><br>
+
+                            I knew it was going to be a challenging project, but challenges are exciting!
+                        </div>
+                    </div>
+                    <div class="column left probtosolve">
+                        <h2 class="chapter">Problems to solve</h2>
+                        <div class="description">
+                            <li>Rasterization of world geometry</li>
+                            <li>Voxelization of mesh input</li>
+                            <li>Creating compact voxel structure</li>
+                            <li>Partitioning regions</li>
+                            <li>Creating outlines</li>
+                            <li>Triangulating outlines</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="row padlr compositerow">
+                    <div class="column left" style="min-width: 50vw;padding-left: 5vw;"">
+                        <h2 class="chapter" style="margin: 0 60px;padding-top:0;">Reflections</h2>
+                        <div class="description">
+                            In this project I have had the opportunity to work with a lot of interesting algorithms, and even make a couple of my own!
+                            Creating algorithms and seeing them work in practice has to be one of the most exciting feelings. I have a much better understanding
+                            of how Delaunay (and by extension Voronoi) works, and have more experience with reading, interpreting and implementing
+                            algorithms from scientific papers.<br><br>
+
+                            I feel like the result has also shed light on how much I've evolved as a programmer during the course of the project. 
+                            From expanding my knowledge on C/C++ syntax to being better at memory alignment and cache optimisation, I feel like I have gotten a much better hang of
+                            the ins and outs of video game programming. <br><br>
+
+                            One guideline that I set up for myself for this project was to try to minimize runtime heap allocations and keep as much data on the data segment. 
+                            Partly to skip a bunch of costly allocations, but also to keep cache misses to a minimum.<br> With this in mind, I still needed to keep the code as stack friendly as possible.
+                            This was a challenge since I had implemented a couple of algorithms as recursive, which is why I decided to rework them to be
+                            iterative instead, as that method fit the narrative of the algorithms much better when having the stack in mind.<br><br>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row padlr compositerow">
+                    <div class="row left imageset">
+                        <img src="../Image/vox_1_1.png" alt="fig 1.1" class="specpic">
+                        <div class="preview">
+                            <img src="../Image/vox_1_1.png" alt="fig 1.11" class="previmg">
+                        </div>
+                        <img src="../Image/vox_1_2.png" alt="fig 1.2" class="specpic">
+                        <div class="preview">
+                            <img src="../Image/vox_1_2.png" alt="fig 1.22" class="previmg">
+                        </div>
+                        <img src="../Image/vox_1_3.png" alt="fig 1.3" class="specpic">
+                        <div class="preview">
+                            <img src="../Image/vox_1_3.png" alt="fig 1.33" class="previmg">
+                        </div>
+                        <div id="blackout"></div>
+                    </div>
+                    <div class="column left">
+                        <h1 class="chapter">The Process</h1>
+                        <div class="description">
+                            I looked toward <a href="https://github.com/recastnavigation/recastnavigation" target="_blank" class="link">Mikko Mononen's Recast</a> 
+                            for inspiration and relevant data structures during this project, 
+                            but I would have felt like this was a non-achievement if I just copied his methods.
+                            Therefore I tried to only look at it heuristically and come up with my own methods
+                            regarding actual implementation.<br><br>
+                            
+                            For the Mesh Voxelization, I put a 'walkable'-flag on the mesh component to be able to select which geometry
+                            to rasterize. Then, iterated over their respecive AABBs to find where a voxel 
+                            would intersect a triangle on the mesh, and add that voxel to the list. In order to not choke the CPU and eat all of the RAM, 
+                            I had to make sure that it discarded triangles with an unwalkable slope and/or too small area before it tries to voxelize them.
+                            So I added a pass where it first created a simplified mesh from the still relevant triangles, and iterated over those instead.<br><br>
+                            
+                            Somewhere around here I realized that iterating over three dimensions of voxels is simply not efficient enough,
+                            and decided to condense it down to a 2D grid with vertical spans, 
+                            which happened to make memory management a lot easier, and the cache let out a sigh of relief.
+                        </div>
+                    </div>
+                </div>
+                <div class="row padlr compositerow" style="display:flex;">
+                    <div class="column right">
+                        <h1 class="chapter">Tools</h1>
+                        <div class="description" style="margin-left: auto;">
+                            In order to tweak variables on the fly, to test the capability of the software, I needed a tool.
+                            Luckily, I had created a manual Navmesh builder tool for the concurrent group project <a href="../Subpages/project7.html" class="link">Toys or Sus</a>,
+                            and I could easily expand on it. Furthermore, I could conveniently access geometry in the scene through picking and tweak them in 
+                            our entity inspector, both of which we had implemented some time before, so that our Level Designers 
+                            could easily manipulate the world. This allowed me to easily construct 
+                            best- and worst case scenarios, and a lot of edge cases, which is important when developing complex systems.<br><br>
+
+                            Another invaluable tool for debugging and visualizing the progress were the debug lines, 
+                            which allowed me to see progress all throughout the project. Hats off to our graphics programmer <a href="https://www.victorpetersson.com/" target="_blank" class="link">Victor Petersson</a> for
+                            probably the most used feature in our engine (the rest of the rendering aside, haha). The coloured lines shown in the figures
+                            are all such debug lines. The UI shown next to this block of text is the tool for the navmesh creation, with sliders for relevant
+                            variables.
+                        </div>
+                    </div>
+                    <div class="row right imageset">
+                        <img src="../Image/vox_1_4.png" alt="fig 1.4" class="specpic">
+                        <div class="preview">
+                            <img src="../Image/vox_1_4.png" alt="fig 1.44" class="previmg">
+                        </div>
+                        <div id="blackout"></div>
+                    </div>
+                </div>
+                <div class="row padlr compositerow" style="display:flex;flex-wrap: wrap;">
+                    <div class="row left imageset">
+                        <img src="../Image/vox_2_1.png" alt="fig 2.1" class="specpic">
+                        <div class="preview">
+                            <img src="../Image/vox_2_1.png" alt="fig 2.11" class="previmg">
+                        </div>
+                        <img src="../Image/vox_2_2.png" alt="fig 2.2" class="specpic">
+                        <div class="preview">
+                            <img src="../Image/vox_2_2.png" alt="fig 2.22" class="previmg">
+                        </div>
+                        <img src="../Image/vox_2_3.png" alt="fig 2.3" class="specpic">
+                        <div class="preview">
+                            <img src="../Image/vox_2_3.png" alt="fig 2.33" class="previmg">
+                        </div>
+                        <div id="blackout"></div>
+                    </div>
+                    <div class="column left">
+                        <h1 id="disclaimerhehe" class="chapter">Filters, regions and outlines</h1>
+                        <div class="description">
+                            From the long list of voxels spans now at my disposal, I had to start culling unnecessary and unappealing spans,
+                            so that the resulting mesh would be as simple and pretty as possible. The first thing to go were technically
+                            walkable areas, that were obstructed by another region above them where the distance between the two regions wasn't
+                            high enough for the actor to fit under. Next, ledges had to go, and the condition was that if the top of a connected 
+                            neighbour span was at too steep an angle from the top of the relevant span, the span is set to not walkable. This creates a nice curb
+                            for the walkable area (see the middle picture).<br><br>
+
+                            Next, I needed to come up with a way to create an outline for the mesh. I decided to create an algorithm that defines types for the spans,
+                            marking them as CENTER, EDGE, SPECIAL EDGE, OUTER CORNER, INNER CORNER, or CATWALK. Then it iterates recursively over them, in
+                            the counter-clockwise direction, going straight if it's an edge or special edge, turning left if it is an outer corner, and right if it is an inner corner.
+                            If the algorithm encounters a CATWALK or CENTER it returns false, and the algorithm terminates once it completes a circuit, or exceeds the maximum number of nodes allowed.
+                            If it encounters a SPECIAL EDGE, an OUTER CORNER, or an INNER CORNER, it adds that vertex to the outline. Since I was iterating over regions during this process anyway, 
+                            I decided to mark the regions separately, so one could easily visualize them for debugging purposes (see the bottom picture).<br><br>
+
+                            This algorithm works well for the purpose it's designed for, but it does not currently support holes in the mesh. 
+                            I briefly considered adding support for that, but felt like it was a future improvement if anything, as I wanted to get the whole thing working first.
+                        </div>
+                    </div>
+                </div>
+                <div class="row padlr compositerow" style="display:flex;">
+                    <div class="column right">
+                        <h1 class="chapter">Outline refinement and triangulation</h1>
+                        <div class="description" style="margin-left: auto;">
+                            As shown in the pictures to the right (hover to expand), the purple outline generated by this method is very angular and not very organic,
+                            so I wanted to try simplifying it to hopefully create fewer and more pretty triangles. To do this, I decided on using another recursive algorithm,
+                            called the <a href="https://en.wikipedia.org/wiki/Ramer-Douglas-Peucker_algorithm" target="_blank" class="link">Ramer-Douglas-Peucker algorithm</a>, 
+                            or line smoothing algorithm, to remove unnecessary vertices from the outline. Since the algorithm is designed to simplify 
+                            a curve of line segments, I had to partition the outlines into smaller line segment curves, on which to apply the algorithm.
+                            Incidentally, this made it very convenient to parallelize the process, which I on the other hand didn't do since 
+                            this was not yet a very heavy operation, and I felt like optimization was a beast best saved for later, 
+                            as premature optimization could kill a process if executed poorly.<br><br>
+
+                            After battling for a while with <a href="https://en.wikipedia.org/wiki/Delaunay_triangulation" target="_blank" class="link">Delaunay</a> 
+                            and <a href="https://en.wikipedia.org/wiki/Bowyer-Watson_algorithm" target="_blank" class="link">Bowyer-Watson</a>, I decided that what they provided was not
+                            precisely what I needed at that moment for the triangulation. So I sat down on a Sunday, cup of tea in one hand, 
+                            MS Paint in the other and started to design my own incremental algorithm for triangulation, which requires no additional
+                            vertices, and does not need to compute the convex hull of a finite point set. While what I came up with is by no means perfect, I am
+                            still very pleased with how it came out. 
+                            <br><br>I call the algorithm "Two forward, two back".
+                        </div>
+                    </div>
+                    <div class="row right imageset">
+                        <img src="../Image/vox_3_0.png" alt="fig 3.0" class="specpic">
+                        <div class="preview">
+                            <img src="../Image/vox_3_0.png" alt="fig 3.00" class="previmg">
+                        </div>
+                        <img src="../Image/vox_3_1.png" alt="fig 3.1" class="specpic">
+                        <div class="preview">
+                            <img src="../Image/vox_3_1.png" alt="fig 3.11" class="previmg">
+                        </div>
+                        <img src="../Image/vox_3_2.png" alt="fig 3.2" class="specpic">
+                        <div class="preview">
+                            <img src="../Image/vox_3_2.png" alt="fig 3.22" class="previmg">
+                        </div>
+                        <div id="blackout"></div>
+                    </div>
+                </div>
+                <div class="row padlr compositerow" style="display:flex;flex-wrap: wrap;">
+                    <div class="row left imageset">
+                        <img src="../Image/vox_3_3.png" alt="fig 3.3" class="specpic">
+                        <div class="preview">
+                            <img src="../Image/vox_3_3.png" alt="fig 3.33" class="previmg">
+                        </div>
+                        <img src="../Image/vox_3_4.png" alt="fig 3.4" class="specpic">
+                        <div class="preview">
+                            <img src="../Image/vox_3_4.png" alt="fig 3.44" class="previmg">
+                        </div>
+                        <div id="blackout"></div>
+                    </div>
+                    <div class="column left">
+                        <h1 class="chapter">Two forward, two back</h1>
+                        <div class="description">
+                            The algorithm is not very complex, and pretty fussy with the input data.<br><br>
+                            Given an ordered set of points (outline) of <i>m</i> elements, where <i>d</i> is the direction (-1 or 1);<br>
+                            <ul>
+                                <li>Return early if there are fewer than 3 indices in outline.</li>
+                                
+                                <li>Repeat until there are 3 indices left in list, add them as a triangle to the output triangle list, and return:</li>
+                                
+                                <li>
+                                    Starting from arbitrary index <i>i<sub>n</sub></i>, check if there can be a valid line drawn between values at 
+                                    <i>i<sub>n</sub></i> and <i>i<sub>n+2d</sub></i>.
+                                    <ul>
+                                        <li>If true, add { <i>i<sub>n</sub></i>, <i>i<sub>n+d</sub></i>, <i>i<sub>n+2d</sub></i> }
+                                            as a triangle to the output triangle list and discard <i>i<sub>n+d</sub></i> from input. Then, <i>d = d * -1</i>.</li>
+                                        <li>If false, <i>n</i> = <i>n+d</i>.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            Naïve as it is, it does the job, with some exceptions. I'm happy that I managed to create a generalized algorithm that works
+                            as well as it does in the short time it took, and I think I could improve 
+                            both the time (O(n<sup>2</sup>) worst case, I think) and make it more robust if I spent some more time on that.
+                        </div>
+                    </div>
+                </div>
+                <div class="row padlr compositerow" style="display:flex;">
+                    <div class="column right">
+                        <h1 class="chapter">Final thoughts</h1>
+                        <div class="description" style="margin-left: auto;">
+                            All in all, I am very happy with how this project
+                            turned out. I knew this was going to be a challenge, and I didn't know if I would even be able to finish
+                            before the deadline, so having all the parts working together is a big relief.
+                            Happy as I am, there are still some features I would like to add in the future.<br><br> 
+
+                            One example is the outline generation algorithm, which is recursive when it really should have been incremental, partly
+                            to make it more parallelizable, but also because it absolutely kills the stack memory trying to compute big navmeshes.<br><br>
+                            I would like to pour some effort into improving the outline simplification as well, as it has the potential to make a really clean navmesh
+                            if executed properly!
+                        </div>
+                    </div>
+                    <div class="row right imageset">
+                        <img src="../Image/vox_4_0.png" alt="fig 4.0" class="specpic">
+                        <div class="preview">
+                            <img src="../Image/vox_4_0.png" alt="fig 4.00" class="previmg">
+                        </div>
+                        <img src="../Image/vox_4_1.png" alt="fig 4.1" class="specpic">
+                        <div class="preview">
+                            <img src="../Image/vox_4_1.png" alt="fig 4.11" class="previmg">
+                        </div>
+                        <div id="blackout"></div>
+                    </div>
+                </div>
+                <div class="row padlr compositerow" style="display:flex;">
+                    <div class="description" style="margin-left: auto; margin-right:auto;width:50%;text-align: center;">
+                        <i>Finally, I would like to give some extra thanks to <a href="https://www.axelmelkersson.com/" target="_blank" class="link">Axel Melkersson</a> 
+                            for helping me with figure out some very weird bugs, and being an excellent rubber duck.</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="column left"></div>
+            <div class="column center">
+                <p class="cpyright">&copy; Copyright <script> var today = new Date(); var year = today.getFullYear(); document.write(year);</script>, Teo Silfverhjelm. All rights reserved.</p>
+            </div>
+            <div class="column right"> 
+                <a href="https://www.linkedin.com/in/teo-silfverhjelm/" target="_blank" class="hflink"><i class="fa fa-linkedin-square" style="font-size:32px;margin: 8px 2px 4px 2px;"></i></a>
+                <a href="https://twitter.com/teo_silver/" target="_blank" class="hflink"><i class="fa fa-twitter-square" style="font-size:32px;margin: 8px 2px 4px 2px;"></i></a>
+                <a href="https://www.instagram.com/teo.silfverhjelm/" target="_blank" class="hflink"><i class="fa fa-instagram" style="font-size:32px;margin: 8px 2px 4px 2px;"></i></a>
+            </div>
+        </div>
+    </body> 
+</html>
