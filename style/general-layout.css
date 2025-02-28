@@ -6,13 +6,13 @@
 .base {
     background-image: url(../img/site-bg.png);
     background-repeat: repeat;
+    font-family: "Amatic";
+    color:rgb(249, 241, 231);
 }
 
 /* Navbar */
 .navbar {
     /*background-color: rgb(55, 47, 41);*/
-    background-image:inherit;
-    color:rgb(249, 241, 231);
     display: flex;
     align-items: center;
     position: sticky;
