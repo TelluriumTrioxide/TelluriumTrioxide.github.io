@@ -36,8 +36,7 @@
     height:72px;
     transition: 0.2s;
 }
-.navbar .navlogo:hover {
-    -webkit-mask-image: url(../img/orange-tex.png); 
+.navbar .navlogo:hover { 
     mask-image: url(../img/orange-tex.png); 
     mask-repeat: no-repeat;
 }
