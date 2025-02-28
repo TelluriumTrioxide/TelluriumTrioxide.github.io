@@ -32,13 +32,14 @@
 }
 
 .navbar .navlogo {
+    background-image: url(../img/te-o_papyrus.png);
     display:inline-block;
     height:72px;
+    width:72px;
     transition: 0.2s;
 }
 .navbar .navlogo:hover { 
-    mask-image: url(../img/orange-tex.png); 
-    mask-repeat: no-repeat;
+    background-image: url(../img/te-o_orange.png);
 }
 
 /* Body */
