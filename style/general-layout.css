@@ -1,0 +1,94 @@
+@import url(./font.css);
+
+/* --- General layout --- */
+
+/* Navbar */
+.navbar {
+    /*background-color: rgb(55, 47, 41);*/
+    background-image:inherit;
+    color:rgb(249, 241, 231);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    font-family: "AmaticBold";
+    padding: 8px 24px 8px 8px;
+    transition: 0.2s;
+}
+
+.navbar .navbutton {
+    display:inline-block;
+    vertical-align: middle;
+    font-size: 2em;
+    margin: 4px 8px 4px 16px;
+    transition: 0.2s;
+}
+
+.navbar .navlogo {
+    background-color: rgb(249, 241, 231);
+    display:inline-block;
+    height:72px;
+    transition: 0.2s;
+}
+.navbar .navlogo:hover {
+    background-color: rgb(255, 104, 0);
+}
+
+/* Body */
+body {
+    margin: 0;
+    background: black;
+}
+body::-webkit-scrollbar {
+    width: 8px;             
+    transition: 0.4s;     
+}
+  
+body::-webkit-scrollbar-track {
+    background: transparent;       
+    transition: 0.4s;     
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0, 0);    
+    border-radius: 10px;
+    transition: 0.4s;     
+}
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(97, 97, 97);    
+    transition: 0.4s;     
+}
+
+
+/* --- Alignment --- */
+
+.column {
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.row {
+    flex-direction: row;
+    flex-basis: 100%;
+    flex: 1;
+}
+.padlr {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.left {
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+
+/* --- File Display --- */
+
+.pdf {
+    min-height: calc(50vh);
+    max-height: calc(100vh - 150px);
+}

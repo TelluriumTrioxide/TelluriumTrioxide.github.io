@@ -1,0 +1,10 @@
+/* --- Font setup --- */
+
+@font-face {
+    font-family: "Amatic";
+    src: url("../font/AmaticSC-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "AmaticBold";
+    src: url("../font/AmaticSC-Bold.ttf") format("truetype");
+}

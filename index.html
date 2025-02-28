@@ -22,7 +22,10 @@
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="TelluriumTrioxide.github.io" />
         <link rel="icon" href="./img/te-o_orange.png">
-        <link rel="stylesheet" type="text/css" href="./style/style.css">
+
+        <link rel="stylesheet" type="text/css" href="./style/general-layout.css">
+        <link rel="stylesheet" type="text/css" href="./style/font.css">
+        <link rel="stylesheet" type="text/css" href="./style/style-old.css"> <!-- To be removed -->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
            <!-- <meta http-equiv="refresh" content="0;url=http://TelluriumTrioxide.github.io/subpages/TeoSilfverhjelm-CV.pdf" /> -->
@@ -30,14 +33,150 @@
         <title> Teo Silfverhjelm | Home </title> 
     </head>
     <body>
-        <div style="height:100vh; background-image:url(http://TelluriumTrioxide.github.io/img/site-bg.png); background-repeat: repeat;">
-            <div style="flex: 100vh;">
-
-                <a href="./subpages/TeoSilfverhjelm-CV.pdf" class="hflink"><!-- This causes everything inside to become a link-->
-                    <!--  <div class="column" style="flex:100%; font-family:'AmaticSC-Regular'; font-size: large; align-self: center;">CV</div> -->
+        <!--
+            <div style="height:100vh; background-image:url(http://TelluriumTrioxide.github.io/img/site-bg.png); background-repeat: repeat;">
+                <div style="flex: 100vh;">
+                    <a href="./subpages/TeoSilfverhjelm-CV.pdf" class="hflink"> <!~~ This causes everything inside to become a link~~>
+                        <!~~  <div class="column" style="flex:100%; font-family:'AmaticSC-Regular'; font-size: large; align-self: center;">CV</div> ~~>
+                    </a>                
+                </div>
+            </div>
+        -->
+        <div class="navbar">
+            <div class="column left"> 
+                <a href="#" class="hflink">
+                    <img src="./img/te-o_wood_inv.png" alt="logo" class="logo" height="100%" style="vertical-align: middle;"/>
+                    <div class="name">
+                        TEO SILFVERHJELM
+                    </div>
                 </a>
-                
+            </div>
+            <div class="column right"> 
+                <!--
+                <a id="pbtn" onmouseover="Dropdown();" onmouseout="Dropup();" href="#" class="hflink">
+                    <div class="portfolio" style="color: rgb(255, 158, 93);">PORTFOLIO</div> 
+                </a>
+                -->
+                <a href="./subpages/about.html" class="hflink">
+                    <div class="about">About</div> 
+                </a>
+                <a href="./subpages/cv.html" class="hflink">
+                    <div class="cv">Cv</div> 
+                </a>
             </div>
         </div>
+
     </body>
 </html>
+
+
+
+
+
+<!-- Example body 
+
+ <body>
+    <div class="navbar">
+        <div class="column left"> 
+            <a href="#" class="hflink">
+                <img src="./img/te-o_black_inv.png" alt="logo" class="logo" height="100%" style="vertical-align: middle;"/>
+                <div class="name">
+                    TEO SILFVERHJELM
+                </div>
+            </a>
+        </div>
+        <div class="column right"> 
+            <a id="pbtn" onmouseover="Dropdown();" onmouseout="Dropup();" href="#" class="hflink">
+                <div class="portfolio" style="color: rgb(255, 158, 93);">PORTFOLIO</div> 
+            </a>
+            <a href="./subpages/about.html" class="hflink">
+                <div class="about">About</div> 
+            </a>
+            <a href="./subpages/cv.html" class="hflink">
+                <div class="cv">Cv</div> 
+            </a>
+        </div>
+    </div>
+    <div id="droplist" onmouseover="Dropdown();" onmouseout="Dropup();" style="opacity: 0;position: fixed;">
+        <div class="droplist">
+            <a href="./subpages/specialization.html" class="hflink" style="margin: 8px;">Specialization</a>
+            <a href="./subpages/project7.html" class="hflink" style="margin: 8px;">Toys or Sus</a>
+            <a href="./subpages/project6.html" class="hflink" style="margin: 8px;">Loa of Death</a>
+        </div>
+    </div> 
+    <div id="portfolio" class="body portfoliobody">
+        <div class="column center projectname">
+            <a href="./subpages/specialization.html" class="blink">
+                <h1> Specialization </h1>
+                <video playsinline muted controls class="projectgif" style="height: calc(9/16 * 512px);">
+                    <source src="./Video/specialization-slides.mp4" type="video/mp4">
+                </video>
+            </a>
+            <p class="project">
+                System for generating navigation meshes in our own editor, Gråtredigeraren. 
+                Takes input of geometry in the scene and spits out a navmesh based on parameters set by the accompanying tool.
+                <br><br>
+                <li>Mesh Voxelization</li>
+                <li>Voxel filtering</li>
+                <li>Outline- and refinement algorithms</li>
+                <li>Triangulation algorithms</li>
+                <li>Dear ImGui tool</li>
+            </p>
+            <a href="./subpages/specialization.html" class="link" style="text-decoration: underline;font-size:22px;"> Read more </a>
+        </div>
+        <div class="column center projectname">
+            <a href="./subpages/project7.html" class="blink">
+                <h1> Toys or Sus </h1>
+                <video playsinline muted controls class="projectgif">
+                    <source src="./Video/ai.mp4" type="video/mp4">
+                </video>
+            </a>
+            <p class="project">
+                First person perspective online multiplayer game with up to 16 players, inspired by <a href="https://store.steampowered.com/app/945360/Among_Us/" target="_blank" class="link">Among Us</a>, 
+                created in our DirectX11 3D engine, Gråtmotorn.<br><br>
+
+                <li>Navmesh creation</li>
+                <li>Data oriented Behavior Tree</li>
+                <li>AI Steering</li>
+                <li>AI Locomotion</li>
+                <li>FPP character controller</li>
+                <li>Minigames and 'Vents'</li>
+            </p>         
+            <a href="./subpages/project7.html" class="link" style="text-decoration: underline;font-size:22px;"> Read more </a>
+        </div>
+        <div class="column center projectname">
+            <a href="./subpages/project6.html" class="blink">
+                <h1> Loa Of Death </h1> 
+                <video playsinline muted controls class="projectgif">
+                    <source src="./Video/fight.mp4" type="video/mp4">
+                </video>
+            </a>
+            <p class="project">
+                A third person dungeon crawler, loosely inspired by <a href="https://us.diablo3.blizzard.com/en-us/" target="_blank" class="link">Diablo III</a>,
+                once again created in Gråtmotorn.<br><br>
+                
+                <li>Enemy behavior and AI</li>
+                <li>In-game enemy editing tool</li>
+                <li>animation blending</li>
+                <li>Animation controller system</li>
+                <li>Scripted events</li>
+                <li>In-game scripted event creation tool</li>
+            </p>         
+            <a href="./subpages/project6.html" class="link" style="text-decoration: underline;font-size:22px;"> Read more </a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="column left"></div>
+        <div class="column center">
+            <p class="cpyright">&copy; Copyright <script> var today = new Date(); var year = today.getFullYear(); document.write(year);</script>, Teo Silfverhjelm. All rights reserved.</p>
+        </div>
+        <div class="column right"> 
+            <a href="https://www.linkedin.com/in/teo-silfverhjelm/" target="_blank" class="hflink"><i class="fa fa-linkedin-square" style="font-size:32px;margin: 8px 2px 4px 2px;"></i></a>
+            <a href="https://twitter.com/teo_silver/" target="_blank" class="hflink"><i class="fa fa-twitter-square" style="font-size:32px;margin: 8px 2px 4px 2px;"></i></a>
+            <a href="https://www.instagram.com/teo.silfverhjelm/" target="_blank" class="hflink"><i class="fa fa-instagram" style="font-size:32px;margin: 8px 2px 4px 2px;"></i></a>
+        </div>
+    </div>
+
+ </body>
+
+-->
