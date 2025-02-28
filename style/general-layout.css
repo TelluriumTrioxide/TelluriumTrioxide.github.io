@@ -2,6 +2,12 @@
 
 /* --- General layout --- */
 
+/* Overall */
+.base {
+    background-image: url(../img/site-bg.png);
+    background-repeat: repeat;
+}
+
 /* Navbar */
 .navbar {
     /*background-color: rgb(55, 47, 41);*/
