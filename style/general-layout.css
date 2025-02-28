@@ -71,10 +71,12 @@ body::-webkit-scrollbar-thumb:hover {
 
 .body .textbox {
     border:solid;
-    border:50px;
+    border-radius:50px;
     background-image: url(../img/papyrus-tex.png);
+    background-repeat: repeat;
     padding:32px;
     color:rgb(55, 47, 41);
+    overflow:hidden;
 }
 
 /* Footer */
