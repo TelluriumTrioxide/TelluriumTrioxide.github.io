@@ -73,6 +73,8 @@ body::-webkit-scrollbar-thumb:hover {
     border:solid;
     border:50px;
     background-image: url(../img/papyrus-tex.png);
+    padding:32px;
+    color:rgb(55, 47, 41);
 }
 
 /* Footer */
