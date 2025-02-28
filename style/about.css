@@ -1,0 +1,44 @@
+
+
+
+.body .pictureofme {
+    width: 60em;
+    text-align: center;
+    margin:auto;
+    margin-top: 5vh;
+}
+.body .description {
+    font-size: large;
+    text-align: left;
+    padding-bottom: 40px;
+    padding-right: 10vw;
+}
+
+@media only screen and (orientation:portrait) {
+    .body .description {
+        padding-right: 10vw;
+        padding-left: 10vw;
+        padding-top:40px;
+        text-align: center;
+        font-size: small;
+    }  
+    .body .pictureofme {
+        width: 70vmin;
+        text-align: center;
+        margin:auto;
+        margin-top: 2vh;
+    }
+    .cvimage {
+        width:90%;
+    }
+}
+@media only screen and (orientation:landscape) {
+    .body .pictureofme {
+        width: 50vmin;
+        text-align: center;
+        margin:auto;
+    }
+    .cvimage {
+        width:50vw;
+    }
+}
