@@ -65,6 +65,13 @@ body::-webkit-scrollbar-thumb:hover {
     transition: 0.4s;     
 }
 
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 60px - 120px - 92px);
+    padding-top:128px;
+}
+
 /* Footer */
 .footer {
     color:rgb(249, 241, 231);
