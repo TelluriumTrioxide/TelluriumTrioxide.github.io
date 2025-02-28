@@ -135,3 +135,14 @@ body::-webkit-scrollbar-thumb:hover {
 .hflink:hover {
     color: rgb(255, 104, 0);
 }
+
+.link {
+    color: rgb(255, 104, 0);
+    transition: 0.2s;
+}
+.link:hover {
+    color: rgb(255, 153, 0);
+}
+.link:active {
+    color: rgb(151, 60, 0);
+}
