@@ -71,10 +71,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 .body .textbox {
     border:solid;
-    border-radius:50px;
+    border-radius:48px;
     background-image: url(../img/papyrus-tex.png);
     background-repeat: repeat;
-    padding:32px;
+    padding:48px;
     color:rgb(55, 47, 41);
     overflow:hidden;
 }
