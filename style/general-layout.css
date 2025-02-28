@@ -32,15 +32,14 @@
 }
 
 .navbar .navlogo {
-    background-image: url(../img/papyrus-tex.png);
-    background-color: rgb(249, 241, 231);
     display:inline-block;
     height:72px;
     transition: 0.2s;
 }
 .navbar .navlogo:hover {
-    background-image: none;
-    background-color: rgb(255, 104, 0);
+    -webkit-mask-image: url(../img/orange-tex.png); 
+    mask-image: url(../img/orange-tex.png); 
+    mask-repeat: no-repeat;
 }
 
 /* Body */
