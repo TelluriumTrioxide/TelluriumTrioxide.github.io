@@ -71,7 +71,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .body .textbox {
     border:solid;
-    border-radius:48px;
+    border-radius:32px;
     background-image: url(../img/papyrus-tex.png);
     background-repeat: repeat;
     padding:48px;
