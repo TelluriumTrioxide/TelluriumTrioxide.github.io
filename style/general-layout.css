@@ -73,6 +73,11 @@ body::-webkit-scrollbar-thumb:hover {
     padding-top:128px;
 }
 
+.body .textbox {
+    border:solid;
+    border:50px;
+}
+
 /* Footer */
 .footer {
     color:rgb(249, 241, 231);
