@@ -72,6 +72,7 @@ body::-webkit-scrollbar-thumb:hover {
 .body .textbox {
     border:solid;
     border:50px;
+    background-image: url(../img/papyrus-tex.png);
 }
 
 /* Footer */
