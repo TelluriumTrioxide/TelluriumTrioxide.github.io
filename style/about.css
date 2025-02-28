@@ -15,9 +15,8 @@
 }
 
 .contactinfo {
-    background-color: rgb(42,42,46);
-    /*background-color: white;*/
-    color: rgb(255, 255, 255);
+    /*background-color: rgb(42,42,46);*/
+    color:rgb(249, 241, 231);
     font-size: large;  
     text-align: center;
 }
