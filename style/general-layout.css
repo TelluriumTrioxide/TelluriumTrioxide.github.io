@@ -89,6 +89,5 @@ body::-webkit-scrollbar-thumb:hover {
 /* --- File Display --- */
 
 .pdf {
-    min-height: calc(50vh);
-    max-height: calc(100vh - 150px);
+    min-height: calc(100vh - 60px - 120px);
 }
