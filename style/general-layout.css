@@ -26,7 +26,7 @@
 .navbar .navbutton {
     display:inline-block;
     vertical-align: middle;
-    font-size:larger;
+    font-size:calc(5vmin);
     margin: 4px 8px 4px 32px;
     transition: 0.2s;
 }
