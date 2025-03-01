@@ -85,7 +85,7 @@ body {
 }
 
 .body .textbox .textbreaker {
-    margin: auto;
+    /*margin: auto;*/
     height:15vmin;
 }
 
