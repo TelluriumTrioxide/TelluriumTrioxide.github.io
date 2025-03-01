@@ -27,7 +27,7 @@
     display:inline-block;
     vertical-align: middle;
     font-size:calc(5vmin);
-    margin: 4px 8px 4px 5vw;
+    margin: 4px 8px 2vmin 2vmin;
     transition: 0.2s;
 }
 
