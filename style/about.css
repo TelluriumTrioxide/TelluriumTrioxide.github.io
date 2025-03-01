@@ -19,6 +19,7 @@
     color:rgb(249, 241, 231);
     font-size: large;  
     text-align: center;
+    margin-bottom: 10vh;
 }
 
 @media only screen and (orientation:portrait) {
