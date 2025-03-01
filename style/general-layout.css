@@ -91,7 +91,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 @media only screen and (orientation:landscape) {
     .body .textbox {
-        width: 50vmin;
+        width: 50vw;
         text-align: center;
         margin:auto;
     }
