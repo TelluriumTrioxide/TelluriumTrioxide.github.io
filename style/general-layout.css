@@ -20,7 +20,6 @@
     top:0px;
     font-family: "AmaticBold";
     padding: 8px 8px 8px 8px;
-    transition: 0.2s;
 }
 
 .navbar .navbutton {
@@ -80,6 +79,11 @@ body {
     color:rgb(55, 47, 41);
     overflow:hidden;
     max-width: 2480px;
+}
+
+.body .textbox .textbreaker {
+    margin: auto;
+
 }
 
 @media only screen and (orientation:portrait) {
