@@ -2,10 +2,9 @@
 
 
 .body .pictureofme {
-    width: 60em;
     text-align: center;
     margin:auto;
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
 .body .description {
     font-size: large;
