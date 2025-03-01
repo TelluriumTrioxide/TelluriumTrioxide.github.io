@@ -86,7 +86,7 @@ body {
 
 .body .textbox .textbreaker {
     margin: auto;
-    min-height:5vmin;
+    height:15vmin;
 }
 
 @media only screen and (orientation:portrait) {
