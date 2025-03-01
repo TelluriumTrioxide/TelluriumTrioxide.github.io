@@ -80,6 +80,9 @@ body {
     overflow:hidden;
     max-width: 2480px;
 }
+.body .textbox .text {
+    margin: 0 10%;
+}
 
 .body .textbox .textbreaker {
     margin: auto;
