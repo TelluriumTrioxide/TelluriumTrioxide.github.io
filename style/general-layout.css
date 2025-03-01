@@ -70,7 +70,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .body .textbox {
-    border:solid;
+    border:none;
     border-radius:32px;
     background-image: url(../img/papyrus-tex.png);
     background-repeat: repeat;
@@ -78,6 +78,23 @@ body::-webkit-scrollbar-thumb:hover {
     color:rgb(55, 47, 41);
     overflow:hidden;
     max-width: 2480px;
+}
+
+@media only screen and (orientation:portrait) {
+    .body .textbox {
+        margin-right: 10vw;
+        margin-left: 10vw;
+        margin-top:40px;
+        text-align: center;
+        font-size: small;
+    } 
+}
+@media only screen and (orientation:landscape) {
+    .body .textbox {
+        width: 50vmin;
+        text-align: center;
+        margin:auto;
+    }
 }
 
 /* Footer */
