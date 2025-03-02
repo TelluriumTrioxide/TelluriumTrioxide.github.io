@@ -64,6 +64,7 @@ body {
 
 .body {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     min-height: calc(100vh - 60px - 120px - 92px);
     padding-top:2vmin;
