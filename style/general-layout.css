@@ -146,12 +146,15 @@ body {
 }
 .left {
     text-align: left;
+    justify-content: left;
 }
 .center {
     text-align: center;
+    justify-content: center;
 }
 .right {
     text-align: right;
+    justify-content: right;
 }
 
 /* --- File Display --- */
