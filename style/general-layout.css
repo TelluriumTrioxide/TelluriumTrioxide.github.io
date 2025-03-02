@@ -4,8 +4,9 @@
 
 /* Overall */
 .base {
-    background-image: url(../img/site-bg.png);
-    background-repeat: repeat;
+    background-image: url(../img/site-bg-big.png);
+    background-size: cover;
+    background-repeat: repeat-y;
     font-family: "Amatic";
     color:rgb(249, 241, 231);
 }
