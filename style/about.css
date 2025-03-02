@@ -3,8 +3,11 @@
 
 .body .pictureofme {
     text-align: center;
+    justify-items: center;
+    align-items: center;
     margin:auto;
-    max-width:inherit;
+    max-width:90vw;
+    max-height:90vmin
 }
 .body .description {
     font-size: large;
