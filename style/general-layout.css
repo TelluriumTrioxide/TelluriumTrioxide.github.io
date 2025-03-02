@@ -133,11 +133,13 @@ body {
 /* --- Alignment --- */
 
 .column {
+    display: flex;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
 }
 .row {
+    display: flex;
     flex-direction: row;
     flex-basis: 100%;
     flex: 1;
