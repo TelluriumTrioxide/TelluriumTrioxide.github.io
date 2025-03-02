@@ -5,6 +5,7 @@
     margin:auto;
     max-width:100%;
     max-height:100%;
+    width: 25vmin;
 }
 .body .description {
     font-size: large;
@@ -41,7 +42,6 @@
 }
 @media only screen and (orientation:landscape) {
     .body .pictureofme {
-        width: 25vmin;
         text-align: center;
         margin:auto;
     }
