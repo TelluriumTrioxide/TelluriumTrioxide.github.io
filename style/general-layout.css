@@ -118,7 +118,7 @@ body {
     display: flex;
     font-family: "Amatic";
     vertical-align: middle;
-    padding: 10vmin 16px 16px 16px;
+    padding: 16px 16px 16px 16px;
     min-height: 32px;
     margin-bottom: auto;
     flex-shrink: 0;
