@@ -85,7 +85,8 @@ body::-webkit-scrollbar-thumb:hover {
    margin:0;
 }
 .body .textbox .text {
-    margin: 0 calc(10vmin + 6vw);
+    /*margin: 0 calc(10vmin + 6vw);*/
+    margin:0;
 }
 
 .body .textbox .textbreaker {
