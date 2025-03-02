@@ -1,5 +1,6 @@
 
 function SetSectionHeight(div, offset, ...args) {
+    var total;
     for (var id of args)
     {
         var elem = document.getElementById(id);
