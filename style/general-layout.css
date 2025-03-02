@@ -112,7 +112,7 @@ body {
     display: flex;
     font-family: "Amatic";
     vertical-align: middle;
-    padding: 10vw 16px 16px 16px;
+    padding: 10vmin 16px 16px 16px;
     min-height: 32px;
     margin-bottom: 0px;
 }
