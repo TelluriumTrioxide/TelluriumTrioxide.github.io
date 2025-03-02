@@ -75,7 +75,7 @@ body {
     background-image: url(../img/papyrus-tex.png);
     background-repeat: repeat;
     background-size:cover;
-    padding:2vh 10vmax 10min 10vmin;
+    padding:2vh 10vmax 6vmin 6vmin;
     color:rgb(55, 47, 41);
     overflow:hidden;
     max-width: 2480px;
