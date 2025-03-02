@@ -75,13 +75,13 @@ body {
     background-image: url(../img/papyrus-tex.png);
     background-repeat: repeat;
     background-size:cover;
-    padding:2vh 48px 48px;
+    padding:2vh 4vh 48px 48px;
     color:rgb(55, 47, 41);
     overflow:hidden;
     max-width: 2480px;
 }
 .body .textbox .text {
-    margin: 0 10%;
+    margin: 0 10vmin;
 }
 
 .body .textbox .textbreaker {
