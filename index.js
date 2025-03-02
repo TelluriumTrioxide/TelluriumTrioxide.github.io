@@ -7,5 +7,5 @@ function SetSectionHeight(div, offset, ...args) {
         var elem = document.getElementById(id);
         total += elem.offsetHeight;
     }
-    section.style.minHeight = (total - offset) + 'px'; 
+    section.style.minHeight = (total - offset) + "px"; 
 }
