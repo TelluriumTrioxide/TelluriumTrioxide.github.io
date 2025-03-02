@@ -109,7 +109,9 @@ body::-webkit-scrollbar-thumb:hover {
     .body .textbox {
         width: 50vw;
         text-align: center;
-        margin:auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: auto;
     }
 }
 
