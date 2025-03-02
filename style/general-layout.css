@@ -99,6 +99,10 @@ body {
         text-align: center;
         font-size: small;
     } 
+    
+    .footer .cpyright {
+        font-size: medium;
+    }
 }
 @media only screen and (orientation:landscape) {
     .body .textbox {
