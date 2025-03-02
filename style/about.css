@@ -41,7 +41,7 @@
 }
 @media only screen and (orientation:landscape) {
     .body .pictureofme {
-        width: 50vmin;
+        width: 25vmin;
         text-align: center;
         margin:auto;
     }
