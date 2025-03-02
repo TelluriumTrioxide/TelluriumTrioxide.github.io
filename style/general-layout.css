@@ -82,6 +82,7 @@ body::-webkit-scrollbar-thumb:hover {
     overflow:hidden;
     max-width: 2480px;
    /* margin-bottom: 10vh;*/
+   margin:0;
 }
 .body .textbox .text {
     margin: 0 calc(10vmin + 6vw);
