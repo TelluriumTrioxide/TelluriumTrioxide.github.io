@@ -4,7 +4,7 @@
 
 /* Overall */
 .base {
-    background-image: url(../img/site-bg-big.png);
+    background-image: url(../img/site-bg.jpg);
     background-size: cover;
     background-repeat: repeat-y;
     font-family: "Amatic";
@@ -74,7 +74,7 @@ body::-webkit-scrollbar-thumb:hover {
 .body .textbox {
     border:none;
     border-radius:32px;
-    background-image: url(../img/papyrus-tex.png);
+    background-image: url(../img/papyrus-tex.jpg);
     background-repeat: repeat;
     background-size:cover;
     padding:4vh 0 10vmin 0;
