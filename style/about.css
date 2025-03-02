@@ -4,6 +4,7 @@
 .body .pictureofme {
     text-align: center;
     margin:auto;
+    max-width:inherit;
 }
 .body .description {
     font-size: large;
