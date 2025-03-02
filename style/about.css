@@ -35,6 +35,7 @@
         text-align: center;
         margin:auto;
         margin-top: 2vh;
+        max-height: 25vh;
     }
     .cvimage {
         width:90%;
