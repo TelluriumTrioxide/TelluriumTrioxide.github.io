@@ -14,7 +14,6 @@
 .navbar {
     /*background-color: rgb(55, 47, 41);*/
     background: none;
-    display: flex;
     align-items: center;
     position: sticky;
     top:0px;
@@ -40,8 +39,6 @@
 
 /* Body */
 body {
-    display: flex;
-    flex-direction: column;
     margin: 0;
 }
 ::-webkit-scrollbar {
@@ -117,7 +114,6 @@ body {
 /* Footer */
 .footer {
     color:rgb(249, 241, 231);
-    display: flex;
     font-family: "Amatic";
     vertical-align: middle;
     padding: 16px 16px 16px 16px;
@@ -133,11 +129,13 @@ body {
 /* --- Alignment --- */
 
 .column {
+    display: flex;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
 }
 .row {
+    display: flex;
     flex-direction: row;
     flex-basis: 100%;
     flex: 1;
