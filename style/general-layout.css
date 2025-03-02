@@ -25,7 +25,7 @@
 .navbar .navbutton {
     display:inline-block;
     vertical-align: middle;
-    font-size:5vmin;
+    font-size:4vmin;
     margin: 4px 8px 2vmin 2vmin;
     transition: 0.2s;
 }
@@ -68,7 +68,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    min-height: calc(100vh - 60px - 120px - 92px);
+    min-height: calc(100vh - 7vmin - 4px - 44px - 32px);
     padding-top:2vmin;
     flex: 1 0 auto;
 }
