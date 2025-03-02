@@ -68,7 +68,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    min-height: calc(100vh - 7vmin - 4px - 44px - 32px);
+    min-height: calc(100vh - 7vmin - 16px - 4px - 44px - 32px);
     padding-top:2vmin;
     flex: 1 0 auto;
 }
