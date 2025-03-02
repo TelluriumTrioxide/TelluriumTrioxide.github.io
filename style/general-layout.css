@@ -77,12 +77,12 @@ body::-webkit-scrollbar-thumb:hover {
     background-image: url(../img/papyrus-tex.jpg);
     background-repeat: repeat;
     background-size:cover;
-    padding:0 0 10vmin 0;
+    padding:0;
     color:rgb(55, 47, 41);
     overflow:hidden;
     max-width: 2480px;
-   margin-bottom: 10vh;
-   margin:0;
+    margin-bottom: 10vh;
+    margin:0;
 }
 .body .textbox .text {
     /*margin: 0 calc(10vmin + 6vw);*/
