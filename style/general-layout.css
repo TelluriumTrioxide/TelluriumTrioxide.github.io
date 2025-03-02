@@ -67,6 +67,7 @@ body {
     flex-wrap: wrap;
     min-height: calc(100vh - 60px - 120px - 92px);
     padding-top:2vmin;
+    flex: 1 0 auto;
 }
 
 .body .textbox {
@@ -114,7 +115,8 @@ body {
     vertical-align: middle;
     padding: 10vmin 16px 16px 16px;
     min-height: 32px;
-    margin-bottom: 0px;
+    margin-bottom: auto;
+    flex-shrink: 0;
 }
 .footer .cpyright {
     font-size: 1em;
