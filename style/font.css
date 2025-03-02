@@ -8,3 +8,13 @@
     font-family: "AmaticBold";
     src: url("../font/AmaticSC-Bold.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: "RobotoMono";
+    src: url("../font/RobotoMono/RobotoMono-VariableFont_wght.ttf") format("truetype");   
+}
+
+@font-face {
+    font-family: "RobotoMonoItalic";
+    src: url("../font/RobotoMono/RobotoMono-Italic-VariableFont_wght.ttf") format("truetype");   
+}
