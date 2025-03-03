@@ -81,8 +81,8 @@ body::-webkit-scrollbar-thumb:hover {
     color:rgb(55, 47, 41);
     overflow:hidden;
     max-width: 2480px;
-    margin-bottom: 10vh;
     margin:0;
+    margin-bottom: 10vh;
 }
 .body .textbox .text {
     font-family: "RobotoMono";
