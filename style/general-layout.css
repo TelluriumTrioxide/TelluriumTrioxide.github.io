@@ -166,7 +166,16 @@ body::-webkit-scrollbar-thumb:hover {
 /* --- File Display --- */
 
 .pdf {
-    min-height: calc(100vh - 60px - 120px);
+    min-height: calc(100vh - 7vmin - 16px - 4px - 44px - 32px);
+    max-width: 90vw;
+    min-width:50vmax;
+    border:none;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* Chrome- and Safari-specific CSS here*/
+    .pdf {
+        height:1160px;
+    }
 }
 
 /* --- Links --- */
