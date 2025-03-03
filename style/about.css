@@ -9,11 +9,10 @@
 }
 
 .contactinfo {
-    /*background-color: rgb(42,42,46);*/
     color:rgb(249, 241, 231);
     font-size: large;  
     text-align: center;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
 }
 
 @media only screen and (orientation:portrait) {
