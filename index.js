@@ -18,10 +18,7 @@ function SetSectionHeight(div, breakerid, ...args) {
 
     var breakeroffset = 0;
     var elem = document.getElementById(breakerid);
-    breakeroffset += elem.offsetHeight;
-    breakeroffset += parseInt(window.getComputedStyle(elem).getPropertyValue('margin-top'));
-    breakeroffset += parseInt(window.getComputedStyle(elem).getPropertyValue('margin-bottom'));
-    breakeroffset *= 0.5;
+    breakeroffset += elem.offsetHeight *0.5;
 
     document.getElementById(div).style.minHeight = (total - offset-breakeroffset) + "px"; 
 }
