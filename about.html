@@ -15,8 +15,8 @@
         <title> Teo Silfverhjelm | About </title> 
     </head>
     <body class="base" 
-    onload="SetSectionHeight('rightcolspacer1', 0,'title1', 'desc1', 'title2');SetSectionHeight('leftcolspacer1', 0,'title1', 'desc1', 'title2');"
-    onresize="SetSectionHeight('rightcolspacer1', 0,'title1', 'desc1', 'title2');SetSectionHeight('leftcolspacer1', 0,'title1', 'desc1', 'title2');">
+    onload="SetSectionHeight('rightcolspacer1', 'rightbun1','title1', 'desc1', 'title2');SetSectionHeight('leftcolspacer1', 'leftbun1','title1', 'desc1', 'title2');"
+    onresize="SetSectionHeight('rightcolspacer1', 'rightbun1','title1', 'desc1', 'title2');SetSectionHeight('leftcolspacer1', 'leftbun1','title1', 'desc1', 'title2');">
         <!-- HEADER -->
         <div class="navbar row">
             <div class="row left"> 
@@ -50,8 +50,8 @@
             </div>
             <div class="row center textbox">
                 <div class="column left" style="max-width:20%">
-                    <div class="left" id="leftcolspacer1" onscroll="SetSectionHeight('leftcolspacer1', 80,'title1', 'desc1');"></div>
-                    <div class="left">
+                    <div class="left" id="leftcolspacer1"></div>
+                    <div class="left" id="leftbun1" >
                         <img src="./img/bun-short.png" class="left textbreaker"></img>
                     </div>
                     <div class="column left"></div>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="column right" style="max-width:20%">                    
                     <div class="right" id="rightcolspacer1" ></div>
-                    <div class="right" style="direction: rtl;">
+                    <div class="right" id="rightbun1" style="direction: rtl;">
                         <img src="./img/bun-short.png" class="right textbreaker" style="-webkit-transform: scaleX(-1); transform: scaleX(-1);"></img>
                     </div>
                     <div class="column right"></div>
