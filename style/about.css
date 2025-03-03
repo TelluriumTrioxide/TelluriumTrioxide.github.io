@@ -6,7 +6,7 @@
     max-width:100%;
     max-height:100%;
     width: 25vmin;
-    
+
     border: none;
     border-radius: 12vmin;
 }
@@ -31,7 +31,7 @@
         text-align: center;
         margin:auto;
         margin-top: 2vh;
-        max-height: 25vh;
+        max-height: calc(25vh * 5 / 4);
         max-width:25vh;
     }
     .cvimage {
