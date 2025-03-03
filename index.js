@@ -1,5 +1,5 @@
 
-function SetSectionHeight(div, inoffset, ...args) {
+function SetSectionHeight(div, breakerid, ...args) {
     var total = 0;
     var lastelem;
     for (var id of args)
@@ -11,9 +11,17 @@ function SetSectionHeight(div, inoffset, ...args) {
         lastelem = elem;
     }
     var offset = 0;
-    offset += elem.offsetHeight;
-    offset += parseInt(window.getComputedStyle(elem).getPropertyValue('margin-top'));
-    offset += parseInt(window.getComputedStyle(elem).getPropertyValue('margin-bottom'));
+    offset += lastelem.offsetHeight;
+    offset += parseInt(window.getComputedStyle(lastelem).getPropertyValue('margin-top'));
+    offset += parseInt(window.getComputedStyle(lastelem).getPropertyValue('margin-bottom'));
     offset *= 0.5;
-    document.getElementById(div).style.minHeight = (total - offset-inoffset) + "px"; 
+
+    var breakeroffset = 0;
+    var elem = document.getElementById(breakerid);
+    breakeroffset += elem.offsetHeight;
+    breakeroffset += parseInt(window.getComputedStyle(elem).getPropertyValue('margin-top'));
+    breakeroffset += parseInt(window.getComputedStyle(elem).getPropertyValue('margin-bottom'));
+    breakeroffset *= 0.5;
+
+    document.getElementById(div).style.minHeight = (total - offset-breakeroffset) + "px"; 
 }
